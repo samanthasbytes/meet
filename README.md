@@ -1,6 +1,14 @@
+# Objective
+
+To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+```sh
+npm create vite@5.3.0
+```
 
 Currently, two official plugins are available:
 
@@ -8,6 +16,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 # Features
+
 ### **Feature 1: Filter Events By City**
 
 **User Story:**
