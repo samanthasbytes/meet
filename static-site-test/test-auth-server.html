@@ -56,7 +56,7 @@
         fetch(getAuthURL)
           .then(function (response) {
             if (!response.ok) {
-              throw new Error('Newwork response not ok');
+              throw new Error('Network response not ok');
             }
             return response.json();
           })

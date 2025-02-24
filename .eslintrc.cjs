@@ -14,7 +14,7 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'jest'],
   rules: {
     'no-unused-vars': 'off',
     'react/jsx-no-target-blank': 'off',
@@ -22,5 +22,15 @@ module.exports = {
       'warn',
       { allowConstantExport: true }
     ]
-  }
+  },
+  overrides: [
+    {
+      files: ['src/__tests__/**/*'],
+      env: {
+        jest: true
+      },
+      extends: ['plugin:jest/recommended'],
+      plugins: ['jest']
+    }
+  ]
 };
