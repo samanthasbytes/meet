@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // eslint-disable-next-line
-const CitySearch = ({ allLocations }) => {
+const CitySearch = ({ allLocations, setCurrentCity }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [query, setQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
+
+  useEffect(() => {
+    setSuggestions(allLocations);
+    /* eslint-disable react-hooks/exhaustive-deps */
+  }, [`${allLocations}`]); // stringify complex data type to compare values rather than object refs
 
   const handleInputChanged = (event) => {
     const value = event.target.value;
@@ -23,6 +28,7 @@ const CitySearch = ({ allLocations }) => {
     const value = event.target.textContent;
     setQuery(value);
     setShowSuggestions(false); // to hide the list
+    setCurrentCity(value);
   };
 
   return (
