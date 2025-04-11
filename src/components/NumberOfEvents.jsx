@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
 // eslint-disable-next-line
-const NumberOfEvents = ({}) => {
+const NumberOfEvents = ({ setCurrentNOE }) => {
   const [number, setNumber] = useState(32);
 
   const handleInputChanged = (event) => {
     const value = event.target.value;
     setNumber(value);
+    setCurrentNOE(Number(value)); // Number is a built in JS function, converts string to number
   };
 
   return (

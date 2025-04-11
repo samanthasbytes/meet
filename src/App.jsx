@@ -25,12 +25,12 @@ const App = () => {
   useEffect(() => {
     fetchData();
     /* eslint-disable react-hooks/exhaustive-deps */
-  }, [currentCity]); // called when there's a change in currentCity
+  }, [currentCity, currentNOE]);
 
   return (
     <div className="App">
       <CitySearch allLocations={allLocations} setCurrentCity={setCurrentCity} />
-      <NumberOfEvents />
+      <NumberOfEvents setCurrentNOE={setCurrentNOE} />
       <EventList events={events} />
     </div>
   );
