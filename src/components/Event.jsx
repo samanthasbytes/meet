@@ -8,7 +8,7 @@ const Event = ({ event }) => {
   return (
     <li className="event">
       <h2>{event.summary}</h2>
-      <p>{new Date(event.created).toUTCString()}</p>
+      <p>{event.created}</p>
       <p>{event.location}</p>
       {showDetails ? <p className="details">{event.description}</p> : null}
       <button className="details-btn" onClick={() => setShowDetails(!showDetails)}>
