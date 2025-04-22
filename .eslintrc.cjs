@@ -3,34 +3,42 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
-    node: true // For Node.js-specific globals like require and process
+    node: true, // For Node.js-specific globals like require and process
+  },
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  settings: {
+    react: { version: '18.2' },
+    jest: {
+      globalAliases: {
+        describe: ['defineFeature'],
+      },
+    },
   },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended'
+    'plugin:react-hooks/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh', 'jest'],
+  plugins: ['react-refresh'],
   rules: {
     'no-unused-vars': 'off',
     'react/jsx-no-target-blank': 'off',
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true }
-    ]
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
   },
   overrides: [
     {
-      files: ['src/__tests__/**/*'],
+      files: ['**/*.test.js'],
       env: {
-        jest: true
+        jest: true,
       },
       extends: ['plugin:jest/recommended'],
-      plugins: ['jest']
-    }
-  ]
+      plugins: ['jest'],
+      rules: {
+        'jest/no-standalone-expect': 'off',
+        'jest/expect-expect': 'off',
+      },
+    },
+  ],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
 };
