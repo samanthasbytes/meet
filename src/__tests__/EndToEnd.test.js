@@ -3,14 +3,15 @@
  */
 import puppeteer from 'puppeteer';
 
+// Feature 2
 describe('show/hide event details', () => {
   let browser;
   let page;
   beforeAll(async () => {
     browser = await puppeteer.launch({
-      headless: false,
-      slowMo: 250, // slow down by 250ms
-      timeout: 0, // removes any puppeteer/browser timeout limitations, is not the same as the timeout of jest
+      // headless: false,
+      // slowMo: 250, // slow down by 250ms
+      // timeout: 0, // removes any puppeteer/browser timeout limitations, is not the same as the timeout of jest
     });
     page = await browser.newPage();
     await page.goto('http://localhost:5173/');
