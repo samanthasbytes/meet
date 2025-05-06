@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1744593650141" clover="3.2.0">
-  <project timestamp="1744593650141" name="All files">
+<coverage generated="1746547694908" clover="3.2.0">
+  <project timestamp="1746547694908" name="All files">
     <metrics statements="98" coveredstatements="59" conditionals="36" coveredconditionals="12" methods="24" coveredmethods="20" elements="158" coveredelements="91" complexity="0" loc="98" ncloc="98" packages="2" files="7" classes="7"/>
     <package name="src">
       <metrics statements="64" coveredstatements="25" conditionals="26" coveredconditionals="3" methods="11" coveredmethods="7"/>
       <file name="App.jsx" path="/Users/samanthasalvador/meet/src/App.jsx">
         <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="22" type="stmt"/>
-        <line num="11" count="21" type="stmt"/>
-        <line num="12" count="21" type="stmt"/>
-        <line num="13" count="21" type="stmt"/>
-        <line num="15" count="21" type="stmt"/>
-        <line num="16" count="12" type="stmt"/>
-        <line num="19" count="35" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="12" type="stmt"/>
-        <line num="22" count="12" type="stmt"/>
-        <line num="25" count="21" type="stmt"/>
-        <line num="26" count="12" type="stmt"/>
-        <line num="30" count="21" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="50" type="stmt"/>
+        <line num="11" count="47" type="stmt"/>
+        <line num="12" count="47" type="stmt"/>
+        <line num="13" count="47" type="stmt"/>
+        <line num="15" count="47" type="stmt"/>
+        <line num="16" count="25" type="stmt"/>
+        <line num="19" count="70" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="25" type="stmt"/>
+        <line num="22" count="25" type="stmt"/>
+        <line num="25" count="47" type="stmt"/>
+        <line num="26" count="25" type="stmt"/>
+        <line num="30" count="47" type="stmt"/>
       </file>
       <file name="api.js" path="/Users/samanthasalvador/meet/src/api.js">
         <metrics statements="50" coveredstatements="11" conditionals="24" coveredconditionals="1" methods="7" coveredmethods="3"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="6" count="525" type="stmt"/>
-        <line num="7" count="15" type="stmt"/>
-        <line num="8" count="15" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="980" type="stmt"/>
+        <line num="7" count="28" type="stmt"/>
+        <line num="8" count="28" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
         <line num="20" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="31" count="24" type="cond" truecount="1" falsecount="1"/>
-        <line num="32" count="24" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+        <line num="31" count="38" type="cond" truecount="1" falsecount="1"/>
+        <line num="32" count="38" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="37" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="38" count="0" type="stmt"/>
@@ -48,7 +48,7 @@
         <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="43" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
-        <line num="59" count="5" type="stmt"/>
+        <line num="59" count="8" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
@@ -58,7 +58,7 @@
         <line num="69" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="70" count="0" type="stmt"/>
         <line num="72" count="0" type="stmt"/>
-        <line num="76" count="5" type="stmt"/>
+        <line num="76" count="8" type="stmt"/>
         <line num="77" count="0" type="stmt"/>
         <line num="80" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="82" count="0" type="cond" truecount="0" falsecount="4"/>
@@ -75,56 +75,56 @@
       </file>
       <file name="mock-data.js" path="/Users/samanthasalvador/meet/src/mock-data.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="5" type="stmt"/>
+        <line num="1" count="8" type="stmt"/>
       </file>
     </package>
     <package name="src.components">
       <metrics statements="34" coveredstatements="34" conditionals="10" coveredconditionals="9" methods="13" coveredmethods="13"/>
       <file name="CitySearch.jsx" path="/Users/samanthasalvador/meet/src/components/CitySearch.jsx">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="7"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="70" type="stmt"/>
-        <line num="6" count="70" type="stmt"/>
-        <line num="7" count="70" type="stmt"/>
-        <line num="9" count="70" type="stmt"/>
-        <line num="10" count="18" type="stmt"/>
-        <line num="14" count="70" type="stmt"/>
-        <line num="15" count="18" type="stmt"/>
-        <line num="16" count="18" type="cond" truecount="1" falsecount="1"/>
-        <line num="19" count="36" type="stmt"/>
-        <line num="23" count="18" type="stmt"/>
-        <line num="24" count="18" type="stmt"/>
-        <line num="27" count="70" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
-        <line num="31" count="2" type="stmt"/>
-        <line num="34" count="70" type="stmt"/>
-        <line num="41" count="5" type="stmt"/>
-        <line num="47" count="26" type="stmt"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="5" count="125" type="stmt"/>
+        <line num="6" count="125" type="stmt"/>
+        <line num="7" count="125" type="stmt"/>
+        <line num="9" count="125" type="stmt"/>
+        <line num="10" count="34" type="stmt"/>
+        <line num="14" count="125" type="stmt"/>
+        <line num="15" count="30" type="stmt"/>
+        <line num="16" count="30" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="60" type="stmt"/>
+        <line num="23" count="30" type="stmt"/>
+        <line num="24" count="30" type="stmt"/>
+        <line num="27" count="125" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="34" count="125" type="stmt"/>
+        <line num="41" count="7" type="stmt"/>
+        <line num="47" count="42" type="stmt"/>
       </file>
       <file name="Event.jsx" path="/Users/samanthasalvador/meet/src/components/Event.jsx">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="6" count="272" type="stmt"/>
-        <line num="8" count="272" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="630" type="stmt"/>
+        <line num="8" count="630" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
       </file>
       <file name="EventList.jsx" path="/Users/samanthasalvador/meet/src/components/EventList.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="24" type="stmt"/>
-        <line num="10" count="262" type="stmt"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="50" type="stmt"/>
+        <line num="10" count="617" type="stmt"/>
       </file>
       <file name="NumberOfEvents.jsx" path="/Users/samanthasalvador/meet/src/components/NumberOfEvents.jsx">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="28" type="stmt"/>
-        <line num="7" count="28" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="9" count="8" type="stmt"/>
-        <line num="10" count="8" type="stmt"/>
-        <line num="13" count="28" type="stmt"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="5" count="54" type="stmt"/>
+        <line num="7" count="54" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="13" count="54" type="stmt"/>
       </file>
     </package>
   </project>
