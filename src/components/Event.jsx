@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-// NOTE: missing props validation
 import React, { useState } from 'react';
 
 const Event = ({ event }) => {
