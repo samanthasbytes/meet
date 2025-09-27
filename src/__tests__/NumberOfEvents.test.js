@@ -7,7 +7,9 @@ import App from '../App.jsx';
 // unit tests
 describe('<NumberOfEvents /> component', () => {
   let NumberOfEventsComponent;
-  beforeEach(() => (NumberOfEventsComponent = render(<NumberOfEvents setCurrentNOE={() => {}} />)));
+  beforeEach(
+    () => (NumberOfEventsComponent = render(<NumberOfEvents setCurrentNOE={() => {}} setErrorAlert={() => {}} />))
+  );
 
   test('renders a textbox', () => {
     const numberTextBox = NumberOfEventsComponent.queryByRole('textbox');

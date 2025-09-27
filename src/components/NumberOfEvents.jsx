@@ -1,13 +1,25 @@
 import React, { useState } from 'react';
 
 // eslint-disable-next-line
-const NumberOfEvents = ({ setCurrentNOE }) => {
+const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
   const [number, setNumber] = useState(32);
 
   const handleInputChanged = (event) => {
     const value = event.target.value;
     setNumber(value);
-    setCurrentNOE(Number(value)); // Number is a built in JS function, converts string to number
+
+    let errorText;
+
+    if (value === '') {
+      errorText = '';
+    } else if (isNaN(Number(value)) || Number(value) <= 0) {
+      errorText = 'Please enter a valid number greater than 0';
+    } else {
+      setCurrentNOE(Number(value));
+      errorText = '';
+    }
+
+    setErrorAlert(errorText);
   };
 
   return (
