@@ -1,8 +1,7 @@
 /* eslint-disable no-undef */
 import '@testing-library/jest-dom';
 
-// hides act() errors
-const originalError = console.error;
+const originalError = console.error; // hides act() errors
 
 beforeAll(() => {
   console.error = (...args) => {
@@ -21,5 +20,12 @@ afterAll(() => {
   console.error = originalError;
 });
 
-// sets jest timeout to 30 seconds
 jest.setTimeout(30000);
+
+if (typeof window !== 'undefined' && !window.ResizeObserver) {
+  window.ResizeObserver = class ResizeObserver {
+    observe() {}
+    unobserve() {}
+    disconnect() {}
+  };
+}
