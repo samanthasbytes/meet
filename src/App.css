@@ -105,3 +105,6 @@ input[type='number'] {
     grid-template-columns: 1fr;
   }
 }
+
+/* TODO: charts only look good when details are showing */
+/* TODO: labels on pie chart get cut off*/
